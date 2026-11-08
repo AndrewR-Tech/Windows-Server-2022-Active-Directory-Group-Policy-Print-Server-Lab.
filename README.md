@@ -192,24 +192,87 @@ During the project, I worked through several configuration and connectivity issu
 
 ## Screenshots
 
-Screenshots documenting the project configuration and testing are organized in the following directory:
+The following screenshots document the configuration, deployment, testing, and troubleshooting steps completed throughout this lab.
 
-` screenshots/print-server-gpo/ `
+### 1. Azure Infrastructure and Networking
 
-Screenshots include:
+![Creating Azure VM](screenshots/print-server-gpo/Creating%20a%20VM%20for%20printer.png)
 
-- Azure virtual machine configuration
-- Static private IP configuration
-- Active Directory Domain Services installation
-- Domain controller promotion
-- DNS configuration and resolution
-- Successful domain join
-- Organizational Unit creation
-- Group Policy creation and configuration
-- Shared printer preference configuration
-- Loopback processing configuration
-- Group Policy refresh
-- Successful printer deployment to a domain user
+![VM Initialized](screenshots/print-server-gpo/VM%20Intiated.png)
+
+![Creating Client VM](screenshots/print-server-gpo/creating%20a%20client%20to%20connect%20to%20the%20printer.png)
+
+![Confirming Same Network](screenshots/print-server-gpo/confirming%20same%20network.png)
+
+![Static IP Configuration](screenshots/print-server-gpo/switch%20to%20static%20IP%20to%20make%20domain%20controller.png)
+
+![Network Connectivity Test](screenshots/print-server-gpo/pinging%20other%20VM%20and%20it%20works.png)
+
+### 2. Active Directory and Domain Controller Configuration
+
+![Installing Active Directory](screenshots/print-server-gpo/installing%20active%20directory.png)
+
+![Domain Controller Options](screenshots/print-server-gpo/setting%20up%20domain%20controller%20options.png)
+
+![Promoting Domain Controller](screenshots/print-server-gpo/promoting%20to%20domain%20controller.png)
+
+![Prerequisite Checks](screenshots/print-server-gpo/prerequisites%20checked.png)
+
+![Domain Controller Promoted](screenshots/print-server-gpo/domain%20controller%20promoted.png)
+
+![Verifying Domain Controller](screenshots/print-server-gpo/verifying%20that%20is%20domain%20controller.png)
+
+![DNS Resolution Test](screenshots/print-server-gpo/DNS-Resolution-Test.png)
+
+![Joining Client to Domain](screenshots/print-server-gpo/domain%20join.png)
+
+![Workstations Organizational Unit](screenshots/print-server-gpo/Workstations-Organizational-Unit.png)
+
+### 3. Print Server Installation and Configuration
+
+![Installing Print and Document Services](screenshots/print-server-gpo/Installing%20print%20and%20documents.png)
+
+![Opening Print Management](screenshots/print-server-gpo/select%20print%20management.png)
+
+![Adding Printer](screenshots/print-server-gpo/expand,%20and%20then%20click%20printers%20and%20choose%20add%20printer.png)
+
+![Creating Printer Port](screenshots/print-server-gpo/create%20the%20port%20name.png)
+
+![Printer Destination Configuration](screenshots/print-server-gpo/making%20sure%20it%20is%20to%20the%20right%20destination%20that%20we%20created.png)
+
+![Printer Port Configuration](screenshots/print-server-gpo/make%20sure%20to%20have%20tcp-ip%20enabled%20for%20this%20lab.png)
+
+![Enabling Print Sharing](screenshots/print-server-gpo/enable%20print%20sharing%20in%20print%20management%20under%20printers%20for%20server01.png)
+
+![Configuring Printer Sharing](screenshots/print-server-gpo/enable%20sharing%20for%20the%20printer%20and%20name%20it.png)
+
+![Creating Simulated Printer](screenshots/print-server-gpo/Created%20a%20simulated%20printer.png)
+
+![Shared Printer](screenshots/print-server-gpo/shared%20printer.png)
+
+### 4. Printer Connectivity and Troubleshooting
+
+![Shared Printer Installed on CLIENT01](screenshots/print-server-gpo/confirms%20the%20shared%20printer%20was%20successfully%20installed%20on%20CLIENT01.png)
+
+![Successful Client to Server Printing](screenshots/print-server-gpo/showing%20my%20client%20print%20page%20went%20to%20the%20server%20and%20worked.png)
+
+![Pausing Printer Queue](screenshots/print-server-gpo/creating%20a%20stuck%20queue%20to%20troubleshoot%20by%20pausing%20the%20printer.png)
+
+![Troubleshooting Print Spooler](screenshots/print-server-gpo/troubleshooting%20a%20stuck%20print%20job%20using%20print%20spooler.png)
+
+![Clearing Print Queue](screenshots/print-server-gpo/then%20cancel%20to%20clear.png)
+
+### 5. Group Policy Printer Deployment
+
+![Printer Deployment GPO](screenshots/print-server-gpo/printer%20deployment.png)
+
+![Loopback Processing Configuration](screenshots/print-server-gpo/Loopback-Processing-Merge.png)
+
+![Group Policy Update](screenshots/print-server-gpo/group%20policy%20update.png)
+
+![Group Policy Application Verification](screenshots/print-server-gpo/gpo%20application%20verfication.png)
+
+![Printer Automatically Appearing](screenshots/print-server-gpo/printer%20now%20shows%20up.png)
 
 ## Important Lab Notes
 
