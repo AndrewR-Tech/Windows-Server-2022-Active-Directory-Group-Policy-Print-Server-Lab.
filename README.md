@@ -191,7 +191,89 @@ During the project, I worked through several configuration and connectivity issu
 - Command-line administration
 
 ## Screenshots
+## Screenshots
 
+The following screenshots document the Azure infrastructure, Active Directory configuration, Print Server deployment, Group Policy configuration, and troubleshooting completed throughout this lab.
+
+### 1. Azure Infrastructure and Networking
+
+![Creating Azure VM](Creating%20a%20VM%20for%20printer.png)
+
+![VM Initialized](VM%20Intiated.png)
+
+![Creating Client VM](creating%20a%20client%20to%20connect%20to%20the%20printer.png)
+
+![Confirming Same Network](confirming%20same%20network.png)
+
+![Static IP Configuration](switch%20to%20static%20IP%20to%20make%20domain%20controller.png)
+
+![Network Connectivity Test](pinging%20other%20VM%20and%20it%20works.png)
+
+### 2. Active Directory and Domain Controller
+
+![Installing Active Directory](installing%20active%20directory.png)
+
+![Domain Controller Options](setting%20up%20domain%20controller%20options.png)
+
+![Promoting Domain Controller](promoting%20to%20domain%20controller.png)
+
+![Prerequisite Checks](prerequisites%20checked.png)
+
+![Domain Controller Promoted](domain%20controller%20promoted.png)
+
+![Verifying Domain Controller](verifying%20that%20is%20domain%20controller.png)
+
+![DNS Resolution Test](DNS-Resolution-Test.png)
+
+![Joining Client to Domain](domain%20join.png)
+
+![Workstations Organizational Unit](Workstations-Organizational-Unit.png)
+
+### 3. Print Server Installation and Configuration
+
+![Installing Print and Document Services](Installing%20print%20and%20documents.png)
+
+![Opening Print Management](select%20print%20management.png)
+
+![Adding Printer](expand,%20and%20then%20click%20printers%20and%20choose%20add%20printer.png)
+
+![Creating Printer Port](create%20the%20port%20name.png)
+
+![Printer Destination Configuration](making%20sure%20it%20is%20to%20the%20right%20destination%20that%20we%20created.png)
+
+![Printer Port Configuration](make%20sure%20to%20have%20tcp-ip%20enabled%20for%20this%20lab.png)
+
+![Enabling Print Sharing](enable%20print%20sharing%20in%20print%20management%20under%20printers%20for%20server01.png)
+
+![Configuring Printer Sharing](enable%20sharing%20for%20the%20printer%20and%20name%20it.png)
+
+![Creating Simulated Printer](Created%20a%20simulated%20printer.png)
+
+![Shared Printer](shared%20printer.png)
+
+### 4. Printer Connectivity and Troubleshooting
+
+![Shared Printer Installed on CLIENT01](confirms%20the%20shared%20printer%20was%20successfully%20installed%20on%20CLIENT01.png)
+
+![Successful Client to Server Printing](showing%20my%20client%20print%20page%20went%20to%20the%20server%20and%20worked.png)
+
+![Pausing Printer Queue](creating%20a%20stuck%20queue%20to%20troubleshoot%20by%20pausing%20the%20printer.png)
+
+![Troubleshooting Print Spooler](troubleshooting%20a%20stuck%20print%20job%20using%20print%20spooler.png)
+
+![Clearing Print Queue](then%20cancel%20to%20clear.png)
+
+### 5. Group Policy Printer Deployment
+
+![Printer Deployment GPO](printer%20deployment.png)
+
+![Loopback Processing Configuration](Loopback-Processing-Merge.png)
+
+![Group Policy Update](group%20policy%20update.png)
+
+![Group Policy Application Verification](gpo%20application%20verfication.png)
+
+![Printer Automatically Appearing](printer%20now%20shows%20up.png)
 ## Important Lab Notes
 
 - The printer uses a simulated file-backed local port rather than a physical network printer. Print output is written to `C:\PrintLab\PrintOutput.txt`.
